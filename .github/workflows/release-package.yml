@@ -44,7 +44,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
       - name: Cache node modules
         uses: actions/cache@v3
         env:
@@ -59,6 +59,8 @@ jobs:
             ${{ runner.os }}-
       - run: npm install
       - run: npm ci
+      - name: Configure npm
+        run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
       - run: npm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

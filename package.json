@@ -1,6 +1,6 @@
 {
   "name": "@ojdoc/ask-sdk-s3-persistence-adapter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "S3 based implementation package of PersistenceAdapter interface in ASK SDK v2 for Node.js based on AWS SDK v3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
