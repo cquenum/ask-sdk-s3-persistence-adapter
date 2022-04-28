@@ -1,4 +1,4 @@
-ASK SDK S3 Persistence Adapter package contains implementation of persistence adapter in Core SDK ('ask-sdk-core') based on AWS SDK.
+ASK SDK S3 Persistence Adapter package contains implementation of persistence adapter in Core SDK ('ask-sdk-core') based on AWS SDK v3.
 
 ## Note
 
@@ -7,6 +7,10 @@ Because Amazon S3 provides [eventual consistency](https://docs.aws.amazon.com/Am
 ## What is ASK SDK v2 for Node.js
 
 The ASK SDK v2 for Node.js is an open-source Alexa CustomSkill Development Kit. ASK SDK v2 for Node.js makes it easier for you to build highly engaging skills, by allowing you to spend more time on implementing features and less on writing boiler-plate code.
+
+## What is AWS SDK for JavaScript v3
+
+The [AWS SDK for JavaScript v3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html) provides a JavaScript API for AWS services. You can use the JavaScript API to build libraries or applications for [Node.js](https://nodejs.org/en/) or the browser.
 
 ## Installing
 ASK SDK S3 Persistence Adapter package is an addon package for the core SDK ('ask-sdk-core') and thus has peer dependency of the core SDK package. From within your NPM project, run the following commands in the terminal to install them:
@@ -51,7 +55,7 @@ const Adapter = require('@ojdoc/ask-sdk-s3-persistence-adapter');
 ```
 
 ## Opening Issues
-For bug reports, feature requests and questions, we would like to hear about it. Search the [existing issues](https://github.com/ojdoc/ask-sdk-s3-persistence-adapter/issues) and try to make sure your problem doesn’t already exist before opening a new issue. It’s helpful if you include the version of the SDK, Node.js or browser environment and OS you’re using. Please include a stack trace and reduced repro case when appropriate, too.
+For bug reports, feature requests and questions, we would like to hear about it. Search the [existing issues](https://github.com/cquenum/ask-sdk-s3-persistence-adapter/issues) and try to make sure your problem doesn’t already exist before opening a new issue. It’s helpful if you include the version of the SDK, Node.js or browser environment and OS you’re using. Please include a stack trace and reduced repro case when appropriate, too.
 
 ## License
 This SDK is distributed under the Apache License, Version 2.0, see LICENSE for more information.
