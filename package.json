@@ -1,6 +1,6 @@
 {
   "name": "@ojdoc/ask-sdk-s3-persistence-adapter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "S3 based implementation package of PersistenceAdapter interface in ASK SDK v2 for Node.js based on AWS SDK v3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,8 @@
     "test": "cross-env TS_NODE_FILES=true mocha -r ts-node/register \"./tst/**/*.spec.ts\"",
     "lint": "eslint \"lib/**/*.{ts,tsx}\" \"tst/**/*.{ts,tsx}\"",
     "clean": "rm -rf ./dist",
-    "reinstall": "rm -rf ./node_modules && npm install"
+    "reinstall": "rm -rf ./node_modules && npm install",
+    "upgrade": "npx npm-check-updates -u && npm install"
   },
   "author": "Amazon.com",
   "contributors": [
@@ -30,28 +31,28 @@
     "S3 PersistenceAdapter"
   ],
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.80.0"
+    "@aws-sdk/client-s3": "^3.202.0"
   },
   "peerDependencies": {
     "ask-sdk-core": "^2.12.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.3.1",
-    "@types/mocha": "^9.1.1",
-    "@types/node": "^17.0.29",
-    "@typescript-eslint/eslint-plugin": "^5.21.0",
-    "@typescript-eslint/parser": "^5.21.0",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
     "ask-sdk-core": "^2.12.1",
-    "ask-sdk-model": "^1.38.1",
-    "aws-sdk-client-mock": "^0.6.2",
+    "ask-sdk-model": "^1.39.0",
+    "aws-sdk-client-mock": "^2.0.0",
     "chai": "^4.3.6",
     "cross-env": "^7.0.3",
-    "eslint": "^8.14.0",
-    "eslint-plugin-tsdoc": "^0.2.16",
-    "mocha": "^9.2.2",
+    "eslint": "^8.26.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "mocha": "^10.1.0",
     "nyc": "^15.1.0",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.3"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
   },
   "repository": "github:cquenum/ask-sdk-s3-persistence-adapter",
   "bugs": "https://github.com/cquenum/ask-sdk-s3-persistence-adapter/issues",
