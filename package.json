@@ -1,6 +1,6 @@
 {
   "name": "@ojdoc/ask-sdk-s3-persistence-adapter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "S3 based implementation package of PersistenceAdapter interface in ASK SDK v2 for Node.js based on AWS SDK v3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,9 +11,9 @@
     "lint": "eslint \"lib/**/*.{ts,tsx}\" \"tst/**/*.{ts,tsx}\"",
     "clean": "rm -rf ./dist",
     "reinstall": "rm -rf ./node_modules && npm install",
-    "upgrade": "npx npm-check-updates -u && npm install"
+    "update": "npx npm-check-updates -u && npm install"
   },
-  "author": "Amazon.com",
+  "author": "Ojdoc",
   "contributors": [
     {
       "name": "Tianren Zhang",
@@ -31,28 +31,28 @@
     "S3 PersistenceAdapter"
   ],
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.202.0"
+    "@aws-sdk/client-s3": "^3.440.0"
   },
   "peerDependencies": {
     "ask-sdk-core": "^2.12.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.3.3",
-    "@types/mocha": "^10.0.0",
-    "@types/node": "^18.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
-    "ask-sdk-core": "^2.12.1",
-    "ask-sdk-model": "^1.39.0",
-    "aws-sdk-client-mock": "^2.0.0",
-    "chai": "^4.3.6",
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.10",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.86.0",
+    "aws-sdk-client-mock": "^3.0.0",
+    "chai": "^4.3.10",
     "cross-env": "^7.0.3",
-    "eslint": "^8.26.0",
+    "eslint": "^8.52.0",
     "eslint-plugin-tsdoc": "^0.2.17",
-    "mocha": "^10.1.0",
+    "mocha": "^10.2.0",
     "nyc": "^15.1.0",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
+    "typescript": "^5.2.2"
   },
   "repository": "github:cquenum/ask-sdk-s3-persistence-adapter",
   "bugs": "https://github.com/cquenum/ask-sdk-s3-persistence-adapter/issues",
